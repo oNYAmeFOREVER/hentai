@@ -1,0 +1,223 @@
+﻿<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <!-- Определение кодировки документа не работает без lang="ru"-->
+        <meta charset="utf-8">
+        <title>Лаб 1 и 2</title>
+        <!--Подключаем стили-->
+        <link rel="stylesheet" href="clock.css">
+        <style>
+            body{
+                background: url(background2.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                color: white;
+            } 
+            a{
+                color: yellow;
+            }
+            a:visited{
+                color:hotpink;
+            }
+            .ascii{
+                width: 22%;
+                background: #000000bf;
+                color: white;
+                border: 2px solid #e7ff00ba;
+            }
+            .mytable{
+                width: 400px; 
+                height: 400px; 
+                border: yellow;
+                background: #673ab7d1;
+            }
+            .block{
+                background: #673ab7d1;
+                border: 2px solid #0004756b;
+            }
+            .mylist{
+                position: relative;
+                width: 6%;
+                padding-left: 3%;
+                color: yellow;
+            }
+            .mylink{
+                position: relative;
+                width: 15%;
+            }
+            .myrow{
+                width: 30%; 
+                color: yellow;
+            }
+            .mycolumn{
+                width: 12%;
+            }
+            .buttons{
+                width: 20%;
+                color: yellow;
+            }
+            .authors{
+                width: 22%;
+                color: yellow;
+            }
+            .ptext{
+                width: 29%;
+                color: yellow;
+                padding-left: 1%;
+            }
+            .myimg{
+               margin-left: -1%;
+               padding-left: 1%;
+            }
+            .mytitle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .mytext{
+                background: #e7ff00ba;
+                width: 25%;
+            }
+        </style>    
+    </head>
+    <body style="background: url(background1.jpg);background-size: 100% 100%;background-repeat: no-repeat;background-attachment: fixed;color:black;">
+        <p class="mytext" id="top">ОТЛИЧИЕ &lt;div&gt; ОТ &lt;span&gt;<br>&lt;div&gt; - блочный тег, а &lt;span&gt; - строчный!</p>
+        <h1 class="mytitle">Добро пожаловать</h1>
+        <hr>
+        <div class="myrow block">
+            <span>Дисциплина|Вид работы|Порядковый номер</span>
+            <br>
+            <span>WEB-программирование:</span>
+            <span>Лабораторная работа:</span>
+            <span>№1-2</span>
+        </div>
+        <hr>
+        <div class="mycolumn block">
+            <div>
+                <b>
+                    <i>
+                        <u>
+                            <mark>Не ешь жёлтый снег</mark>
+                        </u>
+                    </i>
+                </b>
+            </div>
+            <div>
+                C<sub>2</sub>H<sub>5</sub>OH
+            </div>
+            <div>
+                x<sup>2</sup>-y<sup>2</sup>=(x-y)(x+y)
+            </div>
+        </div>
+        <hr>
+        <pre class="ascii">
+⠁⠁⠁⠁⠁⠁⠐⢶⣶⣶⣶⣤⣤⡀⠁⠁⣠⣀⣀⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
+⠁⠁⠁⠁⠁⠁⠁⠁⠙⢿⣯⣠⣶⣦⣤⣤⣌⣛⠻⢇⣠⣤⣤⠁⠁⠁⠁⠁⠁⠁
+⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠻⣿⣿⣿⡟⢉⡤⢤⣤⣤⡍⠛⢡⢖⣥⣶⣦⣀⠁⠁
+⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⣠⣿⣿⣿⡏⣭⣶⣿⣿⠟⢿⣦⡡⣿⣿⡇⠁⡙⣷⡀
+⠁⠁⠁⠁⠁⠁⠁⣀⣴⣿⣿⣿⣿⣿⣿⡞⣿⣿⡟⢀⡀⣿⣿⢻⣿⣿⣀⣁⣿⠏
+⠁⠁⠁⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣟⢰⢻⣿⣇⣈⣴⣿⠟⢨⣛⠛⠛⠉⠁⠁
+⠁⣠⣶⣿⣿⡟⢋⠤⣤⠘⢿⣿⣧⡙⠻⠌⠒⠙⠛⢛⣫⣥⣿⣦⡈⠉⣡⣴⣾⠇
+⢰⣿⣿⣿⣿⠁⡇⠁⠙⠷⣤⡙⠻⢿⣿⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⠿⠟⠋⠁⠁
+⠘⣿⣿⣿⣿⣆⠻⣄⠁⣀⡀⠉⠙⠒⠂⠉⠍⠉⠉⠉⠉⣩⣍⣁⣂⡈⠠⠂⠁⠁
+⠁⠘⢿⣿⣿⣿⣦⡉⠳⢬⣛⠷⢦⡄⠁⠁⠁⠁⠁⣀⣼⣿⣿⠿⠛⠋⠁⠁⠁⠁
+⠁⠁⠁⠉⠻⢿⣿⣿⣷⣦⣬⣍⣓⡒⠒⣒⣂⣠⡬⠽⠓⠂⠁⠁⠁⠁⠁⠁⠀⠀⠀
+
+            ⢀⣀⣤⠀⠀⢰⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣀⣠⣤⡀⠀⠹⣿⣿⡆⠀⢸⣿⡿⢻⣿⣿⣶⣦⣤⣀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠈⠻⣿⣿⣷⡄⠀⠹⣿⣷⠀⠸⠋⠀⣰⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀
+⠀⠀⠀⣤⡀⠀⠈⠻⢿⣿⣦⡀⠛⠁⠀⠀⠀⠈⠙⢿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀
+⠀⠀⠀⣿⣿⣷⣦⣄⡀⠙⠋⠀⠀⠀⠀⠀⠀⠀⠀⢀⠈⢻⣿⣿⣿⣿⣿⠀⠀⠀
+⠀⠀⠀⠉⠙⠛⠻⠿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠓⠈⢿⣿⣿⣿⣿⠀⠀⠀
+⠀⠀⠀⢠⣤⣤⣤⣤⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⠀⠀⠀
+⠀⠀⠀⠸⠿⠿⠛⠃⠀⠀⠀⠀⠀⠀⠀⠀⣿⣤⣀⠀⠀⠀⠀⠈⢿⣿⡟⠀⠀⠀
+⠀⠀⠀⠀⢀⣠⣤⡆⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣷⡀⢄⡈⠒⣨⣿⡇⠀⠀⠀
+⠀⠀⠀⠀⢿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣷⣤⣿⣿⣿⣿⠁⠀⠀⠀
+⠀⠀⠀⠀⠈⠁⠀⣀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⡿⠃⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠘⢿⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠿⠛⠁⠀⠀⠀⠀⠀
+
+⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠛⢛⣉⣩⣤⣬⣉⣉⣉⠛⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⠿⠋⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣈⠻⢿⣿⣿⣿⣿⣿
+⣿⣿⣿⠟⢁⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡙⠿⣿⣿⣿
+⣿⣿⠏⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠙⢻⣷⡆⠹⣿⣿
+⣿⡇⢠⣿⣿⣿⣿⣿⣿⡟⠋⠛⢻⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⣀⣴⣿⣿⡄⢹⣿
+⡟⢀⣿⣿⣿⣿⣿⣿⣿⣧⣀⣤⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⢻
+⠁⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠟⢛⣋⣉⣉⣉⠙⢿⣿⣿⣿⣿⣿⡇⢸
+⡄⢸⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⣡⣴⣶⣿⣿⣿⣿⣿⣿⣧⠄⢿⣿⣿⣿⣿⡇⢸
+⣇⠈⣿⣿⣿⣿⣿⣿⣿⡟⠁⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⢸⣿⣿⣿⣿⠃⣼
+⣿⣆⠘⣿⣿⣿⣿⣿⣿⡇⣴⣤⣤⣬⣉⡛⠻⣿⣿⣿⣿⣿⡇⢸⣿⣿⣿⠃⢸⣿
+⣿⣿⣆⠘⢿⣿⣿⣿⣿⢀⣿⣿⣿⣿⣿⠿⠷⠌⠛⢛⣋⣉⣁⣸⣿⡿⠋⣠⣿⣿
+⣿⣿⣿⣶⡈⠙⢿⣿⣟⣈⣉⣩⣥⣤⣶⣶⣶⣾⣿⣿⣿⣿⣿⡿⠟⢁⣾⣿⣿⣿
+⣿⣿⣿⣿⣿⣶⣄⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⣉⣤⣶⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣤⣈⡉⠉⠛⣋⣉⣉⣤⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀
+        </pre>
+        <hr>
+        <details class="authord block">
+            <summary>Авторы</summary>
+            <p>&copy; Миронычев ... Муковин</p>
+        </details>
+        <hr>
+        <figure class="myimg">
+            <p><img src="123.jpg" alt="Земля пуховиком" width="400"></p>
+            <figcaption class="ptext block">Ля какой</figcaption>
+        </figure>
+        <hr>
+        <div class="mylink block">
+            <a href="./otherpage.html">Ссылка на другую страницу</a><br>
+            <a href="#top">Ссылка на начало страницы</a><br>
+            <a href="mailto:iam@nstu.ru">Отправить письмо</a><br>
+        </div>
+        <hr>
+        <ol class="mylist block" type="i" start="100">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+        <hr>
+        <table class="mytable" border="1">
+            <tr>
+                <td></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </table>
+        <hr>
+        <form class="buttons block">
+            <input type="radio" name="1" checked>GET<br>
+            <input type="radio" name="1">POST<br>
+            Выберите время с 8:00 до 16:00<br>
+            <input type="time" value="12:00" min="08:00" max="16:00">
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <hr>
+        <br>
+        <!-- Часы -->
+        <div id="clock">
+            <div class="curcle-block first">
+                <div class="curcle"></div>
+                <div class="curcle"></div>
+            </div>
+            <div class="curcle-block second">
+                <div class="curcle"></div>
+                <div class="curcle"></div>
+            </div>
+            <div class="line-block">
+                <div class="line-first"></div>
+                <div class="line-second"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>
